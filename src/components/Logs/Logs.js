@@ -10,14 +10,14 @@ const Logs = () => {
         getLogs();
     },[]);
 
-    const getLogs = async ()=>{
-        setLoading(true);
-        const res = await fetch('/logs');
-        const data = await res.json();
-        setLogs(data);
-        console.log(data);
-        setLoading(false);
-    }
+    const getLogs = async () => {
+      setLoading(true);
+      const res = await fetch("/logs");
+      const data = await res.json();
+      setLogs(data);
+      console.log(data);
+      setLoading(false);
+    };
 
     if(loading){
      return <Preloader />
