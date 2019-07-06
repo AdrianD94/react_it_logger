@@ -8,6 +8,7 @@ import AddLogModal from './components/Logs/AddLogModal';
 import EditLogModal from './components/Logs/EditLogModal';
 import AddTechModal from './components/Techs/AddTechModal';
 import TechListModal from './components/Techs/TechListModal';
+
 import { Provider } from 'react-redux';
 import store from './store';
 
