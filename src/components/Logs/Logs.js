@@ -1,38 +1,45 @@
-import React, { useEffect,useState } from 'react'
-import LogItem from './LogItems'
-import Preloader from '../Layout/Preloader'
+import React, { useEffect } from 'react';
+import LogItem from './LogItems';
+import Preloader from '../Layout/Preloader';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { getLogs } from '../../actions/logActions';
 
-const Logs = () => {
-    const [logs,setLogs] = useState([]);
-    const [loading,setLoading] = useState(false);
-
-    useEffect(()=>{
-        getLogs();
-    },[]);
-
-    const getLogs = async () => {
-      setLoading(true);
-      const res = await fetch("/logs");
-      const data = await res.json();
-      setLogs(data);
-      console.log(data);
-      setLoading(false);
-    };
-
-    if(loading){
-     return <Preloader />
-    }
+const Logs = ({ log: { logs, loading }, getLogs }) => {
+   
+  useEffect(() => {
+    getLogs();
     
-    return (
-        <ul className="collection with-header">
-            <li className="collection-header">
-                <h4 className="center">System Logs</h4>
-            </li>
-            {!loading && logs.length ===0 ? (<p className="center">No logs to show...</p>):(
-                logs.map(log=><LogItem  log={log} key={log.id}/>)
-            )}
-        </ul>
-    )
-}
+  }, []);
 
-export default Logs
+  if (loading || logs === null) {
+    return <Preloader />;
+  }
+
+  return (
+    <ul className='collection with-header'>
+      <li className='collection-header'>
+        <h4 className='center'>System Logs</h4>
+      </li>
+      {!loading && logs.length === 0 ? (
+        <p className='center'>No logs to show...</p>
+      ) : (
+        logs.map(log => <LogItem log={log} key={log.id} />)
+      )}
+    </ul>
+  );
+};
+
+Logs.propTypes = {
+  logs: PropTypes.object.isRequired,
+  getLogs:PropTypes.func.isRequired
+};
+
+const mapStateToProps = state => ({
+  log: state.log
+});
+
+export default connect(
+  mapStateToProps,
+  { getLogs }
+)(Logs);
