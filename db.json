@@ -22,17 +22,17 @@
       "id": 3
     },
     {
-      "message": "teszxt3",
-      "attention": "",
-      "tech": "Jane Doe",
-      "date": "2019-07-07T15:48:27.775Z",
-      "id": 4
+      "id": 4,
+      "message": "TEST 4",
+      "attention": false,
+      "tech": "Adi Drozman",
+      "date": "2019-07-07T17:10:39.269Z"
     },
     {
-      "message": "test 3",
-      "attention": "",
-      "tech": false,
-      "date": "2019-07-07T15:48:39.966Z",
+      "message": "dsadas",
+      "attention": true,
+      "tech": "Jane Doe",
+      "date": "2019-07-07T17:10:45.577Z",
       "id": 5
     }
   ],
@@ -51,11 +51,7 @@
       "id": 3,
       "firstName": "Sara",
       "lastName": "Wilson"
-    },
-    {
-      "firstName": "adrian",
-      "lastName": "drozman",
-      "id": 4
     }
+   
   ]
 }

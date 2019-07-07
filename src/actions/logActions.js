@@ -27,7 +27,7 @@ export const getLogs = () => async dispatch => {
     });
   }
 };
-export const searchLogs = (text) => async dispatch => {
+export const searchLogs = text => async dispatch => {
   try {
     setLoading();
     const res = await fetch(`/logs?q=${text}`);
@@ -91,7 +91,7 @@ export const updateLog = log => async dispatch => {
   try {
     setLoading();
 
-    const res= await fetch(`/logs/${log.id}`, {
+    const res = await fetch(`/logs/${log.id}`, {
       method: 'PUT',
       body: JSON.stringify(log),
       headers: {
