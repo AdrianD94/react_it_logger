@@ -44,51 +44,6 @@
       "id": 3,
       "firstName": "Sara",
       "lastName": "Wilson"
-    },
-    {
-      "firstName": "adrian",
-      "lastName": "minune",
-      "id": 4
-    },
-    {
-      "firstName": "test",
-      "lastName": "test",
-      "id": 5
-    },
-    {
-      "firstName": "gfdgdf",
-      "lastName": "gfdgdf",
-      "id": 6
-    },
-    {
-      "firstName": "hh",
-      "lastName": "hhh",
-      "id": 7
-    },
-    {
-      "firstName": "ffff",
-      "lastName": "ffff",
-      "id": 8
-    },
-    {
-      "firstName": "gfdgfgdf",
-      "lastName": "gdfgdfgdf",
-      "id": 9
-    },
-    {
-      "firstName": "cvcc",
-      "lastName": "cccc",
-      "id": 10
-    },
-    {
-      "firstName": "diuri",
-      "lastName": "de la pensiune",
-      "id": 11
-    },
-    {
-      "firstName": "ccc",
-      "lastName": "cccc",
-      "id": 12
     }
   ]
 }
