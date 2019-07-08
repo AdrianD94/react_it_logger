@@ -2,17 +2,17 @@
   "logs": [
     {
       "id": 1,
-      "message": "tesr",
-      "attention": false,
-      "tech": "Adi Drozman",
-      "date": "2019-07-07T15:34:28.791Z"
-    },
-    {
-      "message": "adytza",
+      "message": "tesrs",
       "attention": true,
       "tech": "Jane Doe",
-      "date": "2019-07-07T15:02:14.604Z",
-      "id": 2
+      "date": "2019-07-08T08:36:57.981Z"
+    },
+    {
+      "id": 2,
+      "message": "adytza",
+      "attention": true,
+      "tech": "John Doe",
+      "date": "2019-07-08T13:23:07.800Z"
     },
     {
       "message": "test2",
@@ -27,13 +27,6 @@
       "attention": false,
       "tech": "Adi Drozman",
       "date": "2019-07-07T17:10:39.269Z"
-    },
-    {
-      "message": "dsadas",
-      "attention": true,
-      "tech": "Jane Doe",
-      "date": "2019-07-07T17:10:45.577Z",
-      "id": 5
     }
   ],
   "techs": [
@@ -52,6 +45,5 @@
       "firstName": "Sara",
       "lastName": "Wilson"
     }
-   
   ]
 }
